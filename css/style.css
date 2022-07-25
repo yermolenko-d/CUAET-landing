@@ -8,7 +8,7 @@
     #e50707
   );
   background-image: -o-linear-gradient(to right, #ff6464, #fa002a, #e50707);
-  background-image: linear-gradient(to right, #e50707, #fa002a, #ff6464);
+  background-image: linear-gradient(to left, #e50707, #fa002a, #ff6464);
 }
 
 /**************** common css start ****************/
@@ -17,6 +17,10 @@ body {
   padding: 0;
   margin: 0;
   font-size: 14px;
+}
+
+.telegram {
+  color: #fff;
 }
 
 .message_submit_form:focus {
