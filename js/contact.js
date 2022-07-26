@@ -30,12 +30,12 @@ $(document).ready(function(){
                 },
                 message: {
                     required: true,
-                    minlength: 20
+                    minlength: 0
                 }
             },
             messages: {
                 name: {
-                    required: "come on, you have a name, don't you?",
+                    required: "Будь ласка, введіть ім'я",
                     minlength: "your name must consist of at least 2 characters"
                 },
                 subject: {
@@ -47,7 +47,7 @@ $(document).ready(function(){
                     minlength: "your Number must consist of at least 5 characters"
                 },
                 email: {
-                    required: "no email, no message"
+                    required: "Будь ласка, введіть email"
                 },
                 message: {
                     required: "um...yea, you have to write something to send this form.",

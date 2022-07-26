@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/modal.css" />
   </head>
 
   <body>
@@ -284,28 +285,44 @@
             </div>
             <div>
               <div class="contact-form-wrapper d-flex justify-content-center">
-                <form action="#" class="contact-form">
+                <form action="http://localhost:7071/api/Cuaet" method="post" class="contact-form" name="contactForm" id="contactForm">
                   <h5 class="title">Зв'яжіться з нами зараз</h5>
-                  <p class="description">Залиште свої контакти та питання, і ми зв'яжеомся з вами протягом години
+                  <p class="description">Залиште свої контакти та питання, і ми зв'яжемося з вами протягом години
                   </p>
                   <div>
-                    <input type="text" class="form-control rounded border-white mb-3 form-input" id="name" placeholder="Ім'я" required>
+                    <input type="text" class="form-control rounded border-white mb-3 form-input" id="name" name="name" placeholder="Ім'я" required>
                   </div>
                   <div>
-                    <input type="email" class="form-control rounded border-white mb-3 form-input" placeholder="Email" required>
+                    <input type="email" class="form-control rounded border-white mb-3 form-input" id="email" name="email" placeholder="Email" required>
                   </div>
                   <div>
-                    <textarea id="message" class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" placeholder="Ваше питання або додаткові контакти: номер телефону, Viber, Telegram тощо" required></textarea>
+                    <textarea class="form-control rounded border-white mb-3 form-text-area" id="message" name="message" rows="5" cols="30" placeholder="Ваше питання або додаткові контакти: номер телефону, Viber, Telegram тощо" required></textarea>
                   </div>
-                    <input class="btn_2 " style="border:none" type="submit" value="Send">
+                    <input class="btn_2 " style="border:none" type="submit" value="Send" >
                 </form>
+               
               </div>
+              </div>
+              
             </div>
-          </div>
+            
         </div>
       </div>
     </section>
-
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-confirm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body text-center">
+            <h4>Дякуємо!</h4>	
+            <p>Наша команда зв'яжеться з вами найближчим часом</p>
+            <button class="btn btn-success" data-dismiss="modal"><span>Продовжити</span></button>
+          </div>
+        </div>
+      </div>
+      </div>
     <footer class="footer-area">
       <div class="copyright_part">
         <div class="container">
@@ -371,9 +388,7 @@
         </div>
       </div>
     </footer>
-    <!-- footer part end-->
 
-    <!-- jquery plugins here-->
 
     <script src="js/jquery-1.12.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -386,5 +401,7 @@
     <script src="js/mail-script.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/form.js"></script>
+    
   </body>
 </html>
