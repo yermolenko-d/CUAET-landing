@@ -8,7 +8,7 @@
     $.ajax({
       type: 'POST',
       crossDomain:true,
-      url: 'http://localhost:7071/api/Cuaet',
+      url: 'https://cuaedemails.azurewebsites.net/api/cuaet',
       data: json,
       contentType: 'application/json',
       success: function(data) {
