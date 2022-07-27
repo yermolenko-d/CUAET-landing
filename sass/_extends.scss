@@ -1,10 +1,15 @@
-%custom_btn_bg_1{
-    background-image: -webkit-linear-gradient( to right , #ff6464, #fa002a, #e50707);
-    background-image: -o-linear-gradient( to right , #ff6464, #fa002a, #e50707;
-    background-image: linear-gradient( to right , #ff6464, #fa002a, #e50707);  
+%custom_btn_bg_1 {
+  background-image: -webkit-linear-gradient(
+    to right,
+    #ff6464,
+    #fa002a,
+    #e50707
+  );
+  background-image: -o-linear-gradient(to right, #ff6464, #fa002a, #e50707);
+  background-image: linear-gradient(to right, #ff6464, #fa002a, #e50707);
 }
-%custom_btn_bg_2{
-    background-image: -webkit-linear-gradient( to right , #fff, #fff, #fff);
-    background-image: -o-linear-gradient( to right , #fff, #fff, #fff);
-    background-image: linear-gradient( to right , #fff, #fff, #fff);  
+%custom_btn_bg_2 {
+  background-image: -webkit-linear-gradient(to right, #fff, #fff, #fff);
+  background-image: -o-linear-gradient(to right, #fff, #fff, #fff);
+  background-image: linear-gradient(to right, #fff, #fff, #fff);
 }
