@@ -50,15 +50,19 @@ $(document).ready(function(){
                     required: "Будь ласка, введіть email"
                 },
                 message: {
-                    required: "um...yea, you have to write something to send this form.",
-                    minlength: "thats all? really?"
+                    required: "Радимо вказати додаткові контаки для того щоб ми могли швидше з вами зв'язатись.",
+                    minlength: "thats "
                 }
             },
             submitHandler: function(form) {
-                $(form).ajaxSubmit({
+                let formData = new FormData(form)  
+                 const json = JSON.stringify(Object.fromEntries(formData));
+                 console.log(json)
+                $.ajax({
                     type:"POST",
-                    data: $(form).serialize(),
-                    url:"contact_process.php",
+                    data: json,
+                    contentType: 'application/json',
+                    url:"http://localhost:7071/api/Cuaet",
                     success: function() {
                         $('#contactForm :input').attr('disabled', 'disabled');
                         $('#contactForm').fadeTo( "slow", 1, function() {
@@ -67,6 +71,8 @@ $(document).ready(function(){
                             $('#success').fadeIn()
                             $('.modal').modal('hide');
 		                	$('#success').modal('show');
+
+                            $("#myModal").modal('show');
                         })
                     },
                     error: function() {
