@@ -557,7 +557,6 @@ ul {
 @media (max-width: 991px) {
   .our_depertment .depertment_content h2 {
     margin-bottom: 60px;
-    color: #fff;
     line-height: 50px;
   }
 }
@@ -580,6 +579,13 @@ ul {
   .our_depertment .single_our_depertment {
     margin-top: 0;
     background-color: #fff;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .our_depertment .single_our_depertment h2{
+    margin-top: 0;
+    background-color: #242429;
     margin-bottom: 40px;
   }
 }
