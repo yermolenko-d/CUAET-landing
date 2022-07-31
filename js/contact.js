@@ -62,7 +62,7 @@ $(document).ready(function(){
                     type:"POST",
                     data: json,
                     contentType: 'application/json',
-                    url:"http://localhost:7071/api/Cuaet",
+                    url:"https://cuaedemails.azurewebsites.net",
                     success: function() {
                         $('#contactForm :input').attr('disabled', 'disabled');
                         $('#contactForm').fadeTo( "slow", 1, function() {
